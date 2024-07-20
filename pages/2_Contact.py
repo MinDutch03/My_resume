@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.set_page_config(
-    page_title="Alister Baroi", page_icon=":page_facing_up:", layout="centered"
+    page_title="Nguyen Minh Duc", page_icon=":page_facing_up:", layout="centered"
 )
 
 
@@ -34,19 +34,19 @@ def main():
             st.cache_resource.clear()
             st.rerun()
         st.markdown(
-            "Copyright ©️ 2024 :blue[Alister Animesh Baroi.]<br>All rights reserved.",
+            "Copyright ©️ 2024 :blue[Nguyen Minh Duc.]<br>All rights reserved.",
             unsafe_allow_html=True,
         )
 
     st.title("Contact —")
     st.markdown(
-        """This is the :green[***Contact***] page, where you can contact me via the :green[contact form] below, or by reaching out to my :blue[LinkedIn] profile.  
-              :green[— Alister Baroi, with ♥]"""
+        """This is the :green[***Contact***] page, where you can contact me via the :green[contact form] below, or by reaching out to my :blue[LinkedIn] profile.
+              :green[— Nguyen Minh Duc, with ♥]"""
     )
 
     form_sec = st.columns([5, 8])
     with form_sec[0]:
-        with open("./pages/linkedin_embed.html", "r") as f:
+        with open("./linkedin_embed.html", "r") as f:
             html_code = f.read()
             components.html(html_code, height=345)
             # components.iframe("https://github.com/AlisterBaroi/my-resume/blob/main/pages/linkedin_embed.html")
@@ -73,7 +73,7 @@ def main():
     # Feedbacks & Reports Section
     st.subheader("Feedbacks & Reports —")
     st.markdown(
-        """This is the :red[***Feedbacks & Reports***] section, for you to submit your user feedbacks, and report any bugs or other technical issues/difficulties that you may be facing. Please feel free to use these to let us know of any improvements/issues we can bring/fix.  
+        """This is the :red[***Feedbacks & Reports***] section, for you to submit your user feedbacks, and report any bugs or other technical issues/difficulties that you may be facing. Please feel free to use these to let us know of any improvements/issues we can bring/fix.
               :blue[— Thank you ♥]"""
     )
     # st.divider()

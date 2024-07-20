@@ -34,7 +34,7 @@ st.markdown(metadata, unsafe_allow_html=True)
 # # os.chmod(index, 0o777)
 # html = index.read_text()
 # st.write(html)
-# metadata = """<meta name='url' content='https://alisterbaroi/streamlit.app'>
+# metadata = """<meta name='url' content='https://minhduc/streamlit.app'>
 # <meta name="author" content="Nguyen Minh Duc, nguyenminhduc890@gmail.com">
 # <meta name='copyright' content='Nguyen Minh Duc, nguyenminhduc890@gmail.com'>
 # <meta name="application-name" content="Nguyen Minh Duc - Portfolio Website">
@@ -113,7 +113,6 @@ def main():
             help="nguyenminhduc890@gmail.com",
             use_container_width=True,
         )
-        # row1[1].link_button(":red[:globe_with_meridians: Website]", url="https://alisterbaroi.streamlit.io", help="alisterbaroi.streamlit.io", use_container_width=True)
         row1[1].link_button(
             ":blue-background[in] :blue[LinkedIn]",
             url="https://www.linkedin.com/in/minhduc030303",
