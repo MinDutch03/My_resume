@@ -35,12 +35,11 @@ st.markdown(metadata, unsafe_allow_html=True)
 # html = index.read_text()
 # st.write(html)
 # metadata = """<meta name='url' content='https://alisterbaroi/streamlit.app'>
-# <meta name="author" content="Alister Animesh Baroi, alister.baroi@gmail.com">
-# <meta name='copyright' content='Alister Animesh Baroi, alister.baroi@gmail.com'>
-# <meta name="application-name" content="Alister Animesh Baroi - Portfolio Website">
+# <meta name="author" content="Nguyen Minh Duc, nguyenminhduc890@gmail.com">
+# <meta name='copyright' content='Nguyen Minh Duc, nguyenminhduc890@gmail.com'>
+# <meta name="application-name" content="Nguyen Minh Duc - Portfolio Website">
 # <meta name="google-site-verification" content="OP3yEmLoPHFKz6nzUVU_aWuso0ZWhv2MYBNlE0VQb0k" />
-# <meta name="description" content="Welcome to Alister Animesh Baroi's Digital/Online Resume, and portfolio website">
-# <meta name="keywords" content="Alister, Alister Baroi, Alister Animesh Baroi, alisterbaroi, AlisterBaroi, AlisterAnimeshBaroi">"""
+# <meta name="description" content="Welcome to Nguyen Minh Duc's Digital/Online Resume, and portfolio website">
 
 # # Replace the target string
 # if metadata not in html:
@@ -56,7 +55,6 @@ st.markdown(metadata, unsafe_allow_html=True)
 def main():
     # Dark mode
     with st.sidebar:
-        # st.logo("./assets/Minh-Duc.jpg", link="", icon_image="./assets/profile-pic (1).png")
         if st.toggle("Dark Mode", value=True) is False:
             st._config.set_option(f"theme.base", "light")
         else:
@@ -89,7 +87,7 @@ def main():
 
     # Hero Section
     with row0[0]:
-        st.image("./assets/Minh-Duc.jpg", width=230)
+        st.image("../assets/Minh-Duc.jpg", width=230)
 
     with row0[1]:
         st.header("Nguyen Minh Duc", anchor=False)
@@ -408,11 +406,11 @@ def main():
 
     proj_col = st.columns([1.25, 1])
     proj_col[0].write("To see the list of all my relevant projects in details, visit:")
-    proj_col[1].page_link("pages/1_Projects.py", label=":blue[Projects Page ➚]")
+    proj_col[1].page_link("./pages/1_Projects.py", label=":blue[Projects Page ➚]")
     # ss = proj_col[1].markdown("[click here](/Projects) ➚")
 
-    # Honors and Awards Section
-    st.subheader("Honors and Awards", anchor=False)
+    # Achievements Section
+    st.subheader("Achievements", anchor=False)
     with st.container(border=True):
         jobcol = st.columns([2, 5, 2])
         a = {
@@ -458,52 +456,28 @@ def main():
     with st.container(border=True):
         jobcol = st.columns([2, 5, 2])
         a = {
-            "award": "4th Place",
-            "type": "Competition",
-            "date": "06/2021",
-            "from": "Taylor's University",
-            "des": "Ranked 4th out of 73 contestants at ImagineHack2021 hackathon, a coding competition hosted by Taylor's University.",
-            "link": "https://drive.google.com/file/u/1/d/1oA8pHIJU8iYBtqyHCfHs_-Qm7p92JnWp/view",
-        }
-        jobcol[0].write(a["award"])
-        jobcol[1].write(
-            ":gray[Ranked 4th out of 73 contestants at :green[ImagineHack2021 hackathon], by Taylor's University]"
-        )
-        if jobcol[2].button(
-            ":red[View Details]", use_container_width=True, key="ImagineHack2021"
-        ):
-            achievements(
-                a["award"], a["type"], a["date"], a["from"], a["des"], a["link"]
-            )
-
-    with st.container(border=True):
-        jobcol = st.columns([2, 5, 2])
-        a = {
-            "award": "Taylor's Excellence Award",
+            "award": "DAAD",
             "type": "Scholarship",
-            "date": "08/2020",
-            "from": "Taylor's University",
-            "des": "Got the Taylor's Excellence Award scholarship for my Bachelor program from exceptional performance during foundations.",
+            "date": "05/2023",
+            "from": "Deutscher Akademischer Austauschdienst",
+            "des": "received full sponsorship for tuition fees, living expenses, and transportation in Germany for 6 months",
             "link": None,
         }
         jobcol[0].write(a["award"])
         jobcol[1].write(
-            ":gray[Got this :green[scholarship] for my Bachelor program from exceptional performance during foundations]"
+            ":gray[Got this :green[scholarship] for my exchange winter semester 2023 in Germany]"
         )
         if jobcol[2].button(
-            ":red[View Details]", use_container_width=True, key="Excellence"
+            ":red[View Details]", use_container_width=True, key="DAAD"
         ):
             achievements(
                 a["award"], a["type"], a["date"], a["from"], a["des"], a["link"]
             )
 
     st.markdown(
-        "To see the full list of my achievement (from LinkedIn), [click here](https://www.linkedin.com/in/alisterbaroi/details/honors/) ➚",
+        "To see the full list of my achievement (from LinkedIn), [click here](https://www.linkedin.com/in/minhduc030303/details/honors/) ➚",
         unsafe_allow_html=True,
     )
-
-    # components.iframe("https://github.com/AlisterBaroi/my-resume/blob/e3e8c57ef87e1512eca6e7b22a4100b3d461e0e3/google0be275124e299297.html")
-
 
 @st.experimental_dialog("Achievement", width="small")
 def achievements(item, item2, item3, item4, item5, item6):
