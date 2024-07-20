@@ -170,14 +170,14 @@ def main():
                 a["video"],
             )
 
-    # st.markdown(
-    #     "To see the full list of my projects, visit my [GitHub profile](https://github.com/MinDutch03) ➚",
-    #     unsafe_allow_html=True,
-    # )
+    st.markdown(
+         "To see the full list of my projects, visit my [GitHub profile](https://github.com/MinDutch03) ➚",
+         unsafe_allow_html=True,
+    )
 
-    with st.container(border=False):
+    '''with st.container(border=False):
         with open("./pages/github_banner.html", "r") as f:
-            components.html(f.read(), height=300)
+            components.html(f.read(), height=300)'''
 
 
 @st.experimental_dialog("Project Details —", width="large")
