@@ -175,10 +175,6 @@ def main():
          unsafe_allow_html=True,
     )
 
-    '''with st.container(border=False):
-        with open("./pages/github_banner.html", "r") as f:
-            components.html(f.read(), height=300)'''
-
 
 @st.experimental_dialog("Project Details —", width="large")
 def project(item, item2, item3, item4, item5, item6, item7, item8):
