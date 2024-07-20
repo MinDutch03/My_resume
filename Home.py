@@ -94,7 +94,6 @@ def main():
         st.write(
             """
              :blue[Student]
-             *Driving business success with AI-powered workflows & cloud solutions*
               """
         )
         with open("./assets/Minh-Duc_CV.pdf", "rb") as file:
