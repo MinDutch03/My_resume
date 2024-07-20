@@ -13,10 +13,6 @@ def main():
         "Here are all my relevant AI/ML, Web Development, and cloud projects — Enjoy!!"
     )
     st.divider()
-    st.markdown(
-        ":gray[**Note:** To see the full list of all my projects, visit my [GitHub profile](https://github.com/MinDutch03) ➚]",
-        unsafe_allow_html=True,
-    )
     # Dark mode
     with st.sidebar:
         if st.toggle("Dark Mode", value=True) is False:
