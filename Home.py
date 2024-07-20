@@ -87,7 +87,7 @@ def main():
 
     # Hero Section
     with row0[0]:
-        st.image("../assets/Minh-Duc.jpg", width=230)
+        st.image("./assets/Minh-Duc.jpg", width=230)
 
     with row0[1]:
         st.header("Nguyen Minh Duc", anchor=False)
@@ -113,6 +113,7 @@ def main():
             help="nguyenminhduc890@gmail.com",
             use_container_width=True,
         )
+        # row1[1].link_button(":red[:globe_with_meridians: Website]", url="https://mindutch03.streamlit.io", help="alisterbaroi.streamlit.io", use_container_width=True)
         row1[1].link_button(
             ":blue-background[in] :blue[LinkedIn]",
             url="https://www.linkedin.com/in/minhduc030303",
@@ -405,7 +406,7 @@ def main():
 
     proj_col = st.columns([1.25, 1])
     proj_col[0].write("To see the list of all my relevant projects in details, visit:")
-    proj_col[1].page_link("./pages/1_Projects.py", label=":blue[Projects Page ➚]")
+    proj_col[1].page_link("pages/1_Projects.py", label=":blue[Projects Page ➚]")
     # ss = proj_col[1].markdown("[click here](/Projects) ➚")
 
     # Achievements Section

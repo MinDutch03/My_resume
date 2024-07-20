@@ -11,7 +11,7 @@ def main():
         "This website is build by me :red[(Minh Duc / Nguyen Minh Duc)], as my online resume, & as my portfolio website, to showcase coding skills & projects."
     )
     st.write(
-        "This website is made with web app behavior and user interactivity in mind, thus focusing on the :green[User Interface] & :green[User Experience (UI/UX)] for elevated engagement."
+        "This website is made with web app behavior and user interactivity in mind, thus focusing on the :green[User Interface] & :green[User Experience (UI/UX)] for elivated engagement."
     )
 
     st.divider()
@@ -22,7 +22,7 @@ def main():
             "This web application is build using :red[Streamlit], a free and open-source python web framework, build for rapidly developing & deploying data-driven web apps."
         )
         st.page_link("https://streamlit.io", label=":red[Visit Streamlit.io]")
-    streamlit_row[1].image("../assets/streamlit.jpg")
+    streamlit_row[1].image("./assets/streamlit.jpg")
 
     # Dark mode
     with st.sidebar:

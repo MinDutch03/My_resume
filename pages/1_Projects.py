@@ -58,7 +58,7 @@ def main():
             "platform": "Linux, Windows, Docker",
             "des": "This Library project the online system will offer web interfaces that allow users to search for books, view availability, and place online reservations from anywhere, at any time. It eliminates the need for physical visits to the library and provides convenient access to resources remotely. ",
             "link": "https://github.com/MinDutch03/Library-Management-System",
-            "image": "../assets/Library_UI.png",
+            "image": "./assets/Library_UI.png",
             "video": None,
         }
         jobcol[0].write(a["name"])
@@ -87,7 +87,7 @@ def main():
             "platform": "Google Generative AI, Google Cloud Platform",
             "des": "Allow users to input many files, then the bot will answer any questions from user based on provided files.",
             "link": "https://duc-multi-filechat.streamlit.app/",
-            "image": "../assets/file_based_chatbot.png",
+            "image": "./assets/file_based_chatbot.png",
             "video": None,
         }
         jobcol[0].write(a["name"])
@@ -118,7 +118,7 @@ def main():
             "platform": "Firebase",
             "des": "A web application for chatting among users using Firebase for Data backups and also solve the problem of Fault-tolerance, Scalability and Avalability",
             "link": "https://github.com/MinDutch03/Real_time_chat_application",
-            "image": "../assets/realtime_chat.png",
+            "image": "./assets/realtime_chat.png",
             "video": None,
         }
         jobcol[0].write(a["name"])
@@ -176,7 +176,7 @@ def main():
     # )
 
     with st.container(border=False):
-        with open("./github_banner.html", "r") as f:
+        with open("./pages/github_banner.html", "r") as f:
             components.html(f.read(), height=300)
 
 
