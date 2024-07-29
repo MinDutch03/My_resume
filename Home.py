@@ -383,7 +383,7 @@ def main():
         jobcol = st.columns([2, 5, 2])
         jobcol[0].write("Library Management System")
         jobcol[1].write(
-            ":gray[Allow users to borrow and return books. A late fee will be charged unless the user returns the book on time]"
+            ":gray[The online library management system project aims to streamline library operations, improve the user experience, and enhance access to library resources. It automates tasks such as book cataloging, tracking, and borrowing while offering user-friendly interfaces for staff and patrons. The system increases operational efficiency, improves accessibility, and provides a centralized platform for managing library resources.]"
         )
         jobcol[2].link_button(
             ":red[View Project ➚]",
@@ -399,7 +399,7 @@ def main():
         )
         jobcol[2].link_button(
             ":red[View Project ➚]",
-            url="https://duc-multi-filechat.streamlit.app/",
+            url="https://github.com/MinDutch03/file_based_chatbot",
             use_container_width=True,
         )
 
