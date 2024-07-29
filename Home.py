@@ -393,6 +393,30 @@ def main():
 
     with st.container(border=True):
         jobcol = st.columns([2, 5, 2])
+        jobcol[0].write("Object Detection with Yolov8")
+        jobcol[1].write(
+            ":gray[The Object Detection and Tracking Application integrates YOLOv8 with Streamlit, facilitating real-time detection and tracking of objects. Featuring a user-friendly interface, it accommodates tasks such as analyzing images and videos, processing webcam feeds, and handling YouTube videos. This versatile application streamlines the setup of detection tasks, delivering prompt and user-intuitive outcomes. Tailored for diverse scenarios, it presents a seamless approach to harnessing the robust capabilities of YOLOv8 for effective object detection and tracking.]"
+        )
+        jobcol[2].link_button(
+            ":red[View Project ➚]",
+            url="https://github.com/MinDutch03/Object_Detection_with_YOLOv8",
+            use_container_width=True,
+        )
+
+    with st.container(border=True):
+        jobcol = st.columns([2, 5, 2])
+        jobcol[0].write("Credit Card Fraud Detection")
+        jobcol[1].write(
+            ":gray[In this project, the goal is to detect fraudulent credit card transactions using machine learning. Traditional systems relied on rules, but machine learning offers a more powerful approach. The dataset consists of 300,000 anonymized transactions, labeled as either fraudulent or not, with less than 0.1% being fraudulent. Achieving high accuracy is challenging due to the imbalance, as predicting all transactions as normal can result in over 99.9% accuracy. The best results are obtained using the SMOTE technique to address this imbalance.]"
+        )
+        jobcol[2].link_button(
+            ":red[View Project ➚]",
+            url="https://github.com/MinDutch03/credit_card_fraud_detection",
+            use_container_width=True,
+        )
+
+    with st.container(border=True):
+        jobcol = st.columns([2, 5, 2])
         jobcol[0].write("File-based Chatbot")
         jobcol[1].write(
             ":gray[A simple app allows users to input many files, then the bot will answer any questions from user based on provided files]"

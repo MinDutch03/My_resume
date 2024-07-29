@@ -82,8 +82,39 @@ def main():
             "date": "07/2024",
             "platform": "Google Generative AI, Google Cloud Platform",
             "des": "Allow users to input many files, then the bot will answer any questions from user based on provided files.",
-            "link": "https://duc-multi-filechat.streamlit.app/",
+            "link": "https://github.com/MinDutch03/file_based_chatbot",
             "image": "./assets/file_based_chatbot.png",
+            "video": None,
+        }
+        jobcol[0].write(a["name"])
+        jobcol[1].write(
+            f":gray[A website for file input, process with computer vision & LLM, & send back the answer for user's questions based on the file. :green[Date: {a['date']}]]"
+        )
+        if jobcol[2].button(
+            ":red[View Details]", use_container_width=True, key="Chatbot"
+        ):
+            project(
+                a["name"],
+                a["date"],
+                a["tech"],
+                a["platform"],
+                a["des"],
+                a["link"],
+                a["image"],
+                a["video"],
+            )
+
+    # Project: Object_Detection_with_YOLOv8
+    with st.container(border=True):
+        jobcol = st.columns([2, 5, 2])
+        a = {
+            "name": "Object_Detection_with_YOLOv8",
+            "tech": "Python, Machine Learning, Deep Learning",
+            "date": "07/2024",
+            "platform": "Streamlit",
+            "des": "The Object Detection and Tracking Application integrates YOLOv8 with Streamlit, facilitating real-time detection and tracking of objects. Featuring a user-friendly interface, it accommodates tasks such as analyzing images and videos, processing webcam feeds, and handling YouTube videos. This versatile application streamlines the setup of detection tasks, delivering prompt and user-intuitive outcomes. Tailored for diverse scenarios, it presents a seamless approach to harnessing the robust capabilities of YOLOv8 for effective object detection and tracking.",
+            "link": "https://github.com/MinDutch03/Object_Detection_with_YOLOv8",
+            "image": "./assets/interface.png",
             "video": None,
         }
         jobcol[0].write(a["name"])
