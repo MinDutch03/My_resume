@@ -133,7 +133,7 @@ def main():
     st.subheader("Summary", anchor=False)
     st.markdown(
         """
-  - 🏆 A third-year student in Computer Science at Vietnamese German University (Vietnam),
+  - 🏆 A final-year student in Computer Science at Vietnamese German University (Vietnam),
   - 👔 Friendly, studios, punctilious,
   - 🔥 Majored in Data, Machine/Deep Learning
   """
