@@ -119,10 +119,41 @@ def main():
         }
         jobcol[0].write(a["name"])
         jobcol[1].write(
-            f":gray[A website for file input, process with computer vision & LLM, & send back the answer for user's questions based on the file. :green[Date: {a['date']}]]"
+            f":gray[Integrate many features such as Multi-Source Compatibility, Dynamic Model Configuration, YouTube Video URL Detection, Webcam Detection and User-Friendly Interface. :green[Date: {a['date']}]]"
         )
         if jobcol[2].button(
-            ":red[View Details]", use_container_width=True, key="Chatbot"
+            ":red[View Details]", use_container_width=True, key="YOLOv8"
+        ):
+            project(
+                a["name"],
+                a["date"],
+                a["tech"],
+                a["platform"],
+                a["des"],
+                a["link"],
+                a["image"],
+                a["video"],
+            )
+
+    # Project: Credit Card Fraud Detection
+    with st.container(border=True):
+        jobcol = st.columns([2, 5, 2])
+        a = {
+            "name": "Credit Card Fraud Detection",
+            "tech": "Python, Machine Learning, Deep Learning",
+            "date": "07/2024",
+            "platform": "Jupyter Notebook",
+            "des": "The project uses a dataset of 300,000 fully anonymized transactions. Each transaction is labeled either fraudulent or not fraudulent. Note that the prevalence of fraudulent transactions is very low in the dataset—less than 0.1% of the card transactions are fraudulent. This means that a system predicting each transaction to be normal can reach an accuracy of over 99.9%  in spite not detecting any fraudulent transaction. This will necessitate adjustment techniques. The best performance is achieved using the SMOTE technique.",
+            "link": "https://github.com/MinDutch03/credit_card_fraud_detection",
+            "image": "./assets/fullset.png",
+            "video": None,
+        }
+        jobcol[0].write(a["name"])
+        jobcol[1].write(
+            f":gray[In this project, I aim to identify fraudulent transactions with credit cards. The objective is to build a fraud detection system using machine learning techniques. Historically, such systems were rule-based, but machine learning offers powerful new ways to detect Fraudulent Credit Card transactions and compare performances. :green[Date: {a['date']}]]"
+        )
+        if jobcol[2].button(
+            ":red[View Details]", use_container_width=True, key="Credit Card"
         ):
             project(
                 a["name"],
