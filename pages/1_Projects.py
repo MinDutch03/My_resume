@@ -90,9 +90,7 @@ def main():
         jobcol[1].write(
             f":gray[A website for file input, process with computer vision & LLM, & send back the answer for user's questions based on the file. :green[Date: {a['date']}]]"
         )
-        if jobcol[2].button(
-            ":red[View Details]", use_container_width=True, key="Chatbot"
-        ):
+        if jobcol[2].button(":red[View Details]", use_container_width=True, key="Chatbot"):
             project(
                 a["name"],
                 a["date"],
@@ -121,9 +119,7 @@ def main():
         jobcol[1].write(
             f":gray[Integrate many features such as Multi-Source Compatibility, Dynamic Model Configuration, YouTube Video URL Detection, Webcam Detection and User-Friendly Interface. :green[Date: {a['date']}]]"
         )
-        if jobcol[2].button(
-            ":red[View Details]", use_container_width=True, key="YOLOv8"
-        ):
+        if jobcol[2].button(":red[View Details]", use_container_width=True, key="YOLOv8"):
             project(
                 a["name"],
                 a["date"],
@@ -152,9 +148,7 @@ def main():
         jobcol[1].write(
             f":gray[In this project, I aim to identify fraudulent transactions with credit cards. The objective is to build a fraud detection system using machine learning techniques. Historically, such systems were rule-based, but machine learning offers powerful new ways to detect Fraudulent Credit Card transactions and compare performances. :green[Date: {a['date']}]]"
         )
-        if jobcol[2].button(
-            ":red[View Details]", use_container_width=True, key="Credit Card"
-        ):
+        if jobcol[2].button(":red[View Details]", use_container_width=True, key="Credit Card"):
             project(
                 a["name"],
                 a["date"],
@@ -183,9 +177,7 @@ def main():
         jobcol[1].write(
             f":gray[A web application for chatting among users. :green[Date: {a['date']}]]"
         )
-        if jobcol[2].button(
-            ":red[View Details]", use_container_width=True, key="Real-time"
-        ):
+        if jobcol[2].button(":red[View Details]", use_container_width=True, key="Real-time"):
             project(
                 a["name"],
                 a["date"],
@@ -214,9 +206,7 @@ def main():
         jobcol[1].write(
             f":gray[A simple program to Detect humans with bounding boxes.  :green[Date: {a['date']}]]"
         )
-        if jobcol[2].button(
-            ":red[View Details]", use_container_width=True, key="object-tracking"
-        ):
+        if jobcol[2].button(":red[View Details]", use_container_width=True, key="object-tracking"):
             project(
                 a["name"],
                 a["date"],
